@@ -36,7 +36,7 @@
         border: none;
         color: #424242;
         text-transform: uppercase;
-        padding: 6px 30px;
+        padding: 15px 30px;
         &-list {
             border: none;
             display: flex;
@@ -49,6 +49,6 @@
         }
     }
     &__tab-panel {
-        background-color: #F2CE01;
+        background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(242,206,1,1)100%);
     }
 }
