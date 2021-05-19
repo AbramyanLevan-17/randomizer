@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Search.scss';
 
 const Search = () => {
+    const [name, setName] = useState('');
+
+    const handleChange = (e) => {
+        setName(e.target.value)
+        console.log(name)
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setName('');
+    }
     return (
-        <div className='search'>
-            <input className="search-input" placeholder='Enter the name of a meal'/>
+            <form onSubmit={handleSubmit}  className='search'>
+            <input className="search-input" 
+                   placeholder='Enter the name of a meal'
+                   onChange={handleChange}
+                   value={name}
+                  
+            />
             <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
+            <button type='submit'></button>
+            </form>
     )
 }
 
-export default Search
+export default Search;
