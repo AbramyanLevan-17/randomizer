@@ -1,0 +1,44 @@
+.tutorial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-title {
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        position: relative;
+        &::before {
+            content: ' ';
+            position: absolute;
+            top: -25px;
+            height: 4px;
+            background-color: white;
+            width: 100%;
+        }
+    }
+    &-description {
+        font-size: 24px;
+        width: 400px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.2;
+        position: relative;
+        font-family: 'Dancing Script', cursive;
+        font-style: italic;
+        &::after {
+            content: ' ';
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            height: 2px;
+            background-color: white;
+            width: 100%;
+        }
+    }
+   
+}
