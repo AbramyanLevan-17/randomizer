@@ -1,0 +1,54 @@
+.tabs {
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    &-title {
+        color: #424242;
+        font-size: 36px;
+        text-align: center;
+        position: relative;
+        &::before {
+            content: ' ';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            left: 0%;
+            top: -25px;
+            background-color: #F2CE01;
+        }
+    }
+    &-description {
+        color: #424242;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &-wrapper {
+        padding: 30px;
+    }
+}
+
+.react-tabs {
+    
+    &__tab {
+        flex-grow: 1;
+        border: none;
+        color: #424242;
+        text-transform: uppercase;
+        padding: 6px 30px;
+        &-list {
+            border: none;
+            display: flex;
+            width: 897px;
+        }
+        &--selected {
+            background-color: #F2CE01;
+            color: white;
+            font-weight: 700;
+        }
+    }
+    &__tab-panel {
+        background-color: #F2CE01;
+    }
+}
