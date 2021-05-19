@@ -1,0 +1,19 @@
+.randomizer {
+    width: 896px;
+    background-color:#424242 ;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('../../assets/imgs/random-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 71px;
+    &-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    }
+    
+}
